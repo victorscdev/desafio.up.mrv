@@ -108,6 +108,9 @@ section {
 * {
 	font-family: 'Averta Std';
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
 }

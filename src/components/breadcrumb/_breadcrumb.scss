@@ -1,0 +1,53 @@
+.breadcrump {
+	margin-top: calc(46px + 32px);
+
+	@media (min-width: 768px) {
+		margin-top: 32px;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+
+		.icon-home {
+			color: #006b3f;
+			font-size: 24px;
+		}
+
+		&__arrow {
+			font-family: 'Averta Std Bold';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 21px;
+			color: #242625;
+			margin-right: 8px;
+			margin-left: 8px;
+
+			@media (min-width: 768px) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+
+		&__link {
+			cursor: pointer;
+			text-decoration: underline;
+			font-family: 'Averta Std Bold';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 21px;
+			color: #006b3f;
+
+			&:hover {
+				color: #006b3f;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}

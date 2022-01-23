@@ -1,8 +1,10 @@
 // FONTS
-@import 'fonts/averta-std.scss';
+@import 'fonts/averta-std';
+@import 'fonts/icomon';
 
 // BASE
 @import 'base/reset';
 
 // COMPONENTS
 @import '../../../src/components/banner/banner';
+@import '../../../src/components/breadcrumb/breadcrumb';
