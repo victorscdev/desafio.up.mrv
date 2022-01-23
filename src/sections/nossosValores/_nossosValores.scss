@@ -1,0 +1,43 @@
+.nossosValores {
+	padding-top: 32px;
+	padding-bottom: 24px;
+
+	@media (min-width: 992px) {
+		padding-top: calc(96px - 24px);
+	}
+
+	h2 {
+		font-family: 'Averta Std';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 27px;
+		color: #242625;
+
+		@media (min-width: 768px) {
+			font-size: 24px;
+			line-height: 33px;
+		}
+
+		@media (min-width: 992px) {
+			font-size: 40px;
+			line-height: 60px;
+		}
+	}
+
+	p {
+		font-family: 'Averta Std';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 21px;
+		color: #242625;
+		margin-top: 4px;
+		margin-bottom: 16px;
+
+		@media (min-width: 768px) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
