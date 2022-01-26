@@ -17,11 +17,16 @@ const watcherJS = watch([`./src/**/*.js`]);
 
 function scss_task() {
 	log(`Generate CSS files ${new Date().toString()}`);
-	src(`./public/assets/scss/import.scss`)
+	src([
+		`./public/assets/frameworks/bootstrap4/css/bootstrap.min.css`,
+		`./public/assets/frameworks/slick-slider-1.8.1/slick-theme.css`,
+		`./public/assets/frameworks/slick-slider-1.8.1/slick.css`,
+		`./public/assets/scss/import.scss`,
+	])
 		.pipe(sourcemaps.init())
 		.pipe(sass({ outputStyle: 'compressed' }))
 		.pipe(autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9'))
-		.pipe(rename({ suffix: '.min' }))
+		.pipe(concat(`import.bundle.min.css`))
 		.pipe(minifycss())
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest(`./public/assets/css`));
@@ -29,7 +34,14 @@ function scss_task() {
 
 function javascrip_task() {
 	log(`Generate JS files ${new Date().toString()}`);
-	src([`./public/assets/js/html-include.js`, `./src/**/*.js`])
+	src([
+		`./public/assets/js/html-include.js`,
+		`./public/assets/js/jquery-3.2.1.slim.min.js`,
+		`./public/assets/js/popper.min.js`,
+		`./public/assets/frameworks/bootstrap4/js/bootstrap.min.js`,
+		`./public/assets/frameworks/slick-slider-1.8.1/slick.min.js`,
+		`./src/**/*.js`,
+	])
 		.pipe(sourcemaps.init())
 		.pipe(concat(`main.bundle.min.js`))
 		.pipe(terser())

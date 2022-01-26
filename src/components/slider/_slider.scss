@@ -1,0 +1,35 @@
+.carousel {
+	&.slick-slider {
+		.slick-arrow {
+			background: #006b3f;
+			height: 48px;
+			width: 48px;
+			z-index: 100;
+
+			&::before {
+				font-family: 'icomoon' !important;
+				color: #ffffff;
+				font-size: 16px;
+				opacity: 1;
+			}
+
+			&.slick-prev {
+				left: 0;
+				border-radius: 0px 8px 8px 0px;
+
+				&::before {
+					content: '\e903';
+				}
+			}
+
+			&.slick-next {
+				right: 0;
+				border-radius: 8px 0px 0px 8px;
+
+				&::before {
+					content: '\e903';
+				}
+			}
+		}
+	}
+}

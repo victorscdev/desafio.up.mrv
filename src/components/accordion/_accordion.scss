@@ -1,17 +1,20 @@
 .accordion {
 	display: block;
-	margin-bottom: 24px;
 
 	@media (min-width: 768px) {
 		display: flex;
 	}
 
 	&__column {
-		margin-right: 24px;
 		width: 100%;
 
 		@media (min-width: 768px) {
+			margin-right: 24px;
 			width: 50%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -48,6 +51,7 @@
 			.icon-arrow-down {
 				font-size: 8px;
 				color: #006b3f;
+				margin-right: 8px;
 				transition: all 0.4s ease;
 			}
 		}
