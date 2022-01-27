@@ -8,6 +8,9 @@
 			format('woff2'),
 		url('/public/assets/fonts/AvertaStd/AvertaStd-Regular.ttf')
 			format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
 }
 
 // BOLD
@@ -18,4 +21,7 @@
 		url('/public/assets/fonts/AvertaStd/AvertaStd-Bold.woff') format('woff'),
 		url('/public/assets/fonts/AvertaStd/AvertaStd-Bold.woff2') format('woff2'),
 		url('/public/assets/fonts/AvertaStd/AvertaStd-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
 }
