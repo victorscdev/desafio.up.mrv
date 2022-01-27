@@ -1,9 +1,16 @@
 .nossosValores {
 	padding-top: 32px;
 	padding-bottom: 24px;
+	position: relative;
+
+	.grafismo {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
 	@media (min-width: 992px) {
-		padding-top: calc(96px - 24px);
+		padding-bottom: calc(96px - 24px);
 	}
 
 	h2 {

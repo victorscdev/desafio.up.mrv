@@ -1,0 +1,124 @@
+#vagas {
+	&.vagas {
+		margin-bottom: 40px;
+		position: relative;
+
+		.grafismo {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		h2 {
+			font-family: 'Averta Std Bold';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 22px;
+			color: #242625;
+			margin-bottom: 8px;
+		}
+
+		p {
+			font-family: 'Averta Std';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 21px;
+			color: #242625;
+			margin-bottom: 16px;
+		}
+
+		.form-group {
+			margin-bottom: 16px;
+
+			&:last-of-type {
+				margin-bottom: 24px;
+			}
+
+			label {
+				font-family: 'Averta Std Bold';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 24px;
+				color: #242625;
+				margin-bottom: 4px;
+			}
+
+			.custom-select,
+			.form-control {
+				border: 2px solid #5d615f;
+				box-sizing: border-box;
+				border-radius: 8px;
+				color: #000000;
+
+				&::placeholder {
+					font-family: 'Averta Std';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 21px;
+					color: #5d615f;
+				}
+
+				&:focus {
+					box-shadow: 0 0 0 0.2rem rgb(93 97 95 / 25%);
+				}
+			}
+
+			.custom-select {
+				background: url('/public/assets/img/icon-arrow-down.png') right 0.75rem
+					center no-repeat #fff;
+			}
+		}
+
+		#btn_buscar {
+			cursor: pointer;
+			background: #219653;
+			border: none;
+			border-radius: 8px;
+			font-family: 'Averta Std Bold';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 16px;
+			color: #ffffff;
+			margin: 0 auto;
+			padding: 16px 50px;
+			display: block;
+			transition: ease 0.2s;
+
+			&:focus {
+				outline: none;
+				outline: none;
+			}
+
+			&:hover {
+				filter: brightness(85%);
+			}
+
+			&[disabled='disabled'] {
+				background-color: #c4c4c4;
+				cursor: not-allowed;
+				color: #242625;
+
+				&:hover {
+					filter: none;
+				}
+			}
+		}
+
+		.vagas__barra {
+			width: 2px;
+			height: 402px;
+			background: #242625;
+			display: block;
+		}
+
+		.vagas__ilustracao {
+			display: block;
+			margin-left: 104px;
+		}
+	}
+}

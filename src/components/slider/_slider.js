@@ -7,4 +7,4 @@ setTimeout(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
-}, 500);
+}, 1000);

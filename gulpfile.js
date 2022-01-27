@@ -36,6 +36,7 @@ function javascrip_task() {
 	log(`Generate JS files ${new Date().toString()}`);
 	src([
 		`./public/assets/js/html-include.js`,
+		`./public/assets/js/axios.min.js`,
 		`./public/assets/js/jquery-3.2.1.slim.min.js`,
 		`./public/assets/js/popper.min.js`,
 		`./public/assets/frameworks/bootstrap4/js/bootstrap.min.js`,
