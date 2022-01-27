@@ -5,13 +5,33 @@
 		alt="a compania"
 	/>
 	<div class="theCompany__box">
-		<button type="button" class="theCompany__box__btn">
-			<img class="img-fluid" src="/public/assets/img/logo-mrv.png" alt="mrv" />
-		</button>
-
-		<button type="button" class="theCompany__box__btn">
+		<button
+			type="button"
+			class="theCompany__box__btn"
+			data-toggle="modal"
+			data-target="#modal_mrv"
+			id="btn_mrv"
+			onclick="set_modal()"
+		>
 			<img
 				class="img-fluid"
+				id="btn_mrv_img"
+				src="/public/assets/img/logo-mrv.png"
+				alt="mrv"
+			/>
+		</button>
+
+		<button
+			type="button"
+			class="theCompany__box__btn"
+			data-toggle="modal"
+			data-target="#modal_mrv"
+			id="btn_mrv_insticional"
+			onclick="set_modal()"
+		>
+			<img
+				class="img-fluid"
+				id="btn_mrv_insticional_img"
 				src="/public/assets/img/logo-mrv-instituto.png"
 				alt="instituto mrv"
 			/>

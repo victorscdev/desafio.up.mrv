@@ -1,0 +1,95 @@
+.modal {
+	background: rgba(256, 256, 256, 0.96);
+
+	.modal-dialog {
+		height: 100vh;
+		max-width: 100%;
+		min-height: 100vh;
+		margin: 0;
+
+		.modal-content {
+			background: rgba(256, 256, 256, 0.96);
+			border: none;
+			border-radius: 0;
+			height: 100vh;
+			max-width: 100%;
+			min-height: 100vh;
+			padding: 16px;
+
+			@media (min-width: 768px) {
+				padding: 32px 56px;
+			}
+
+			.modal-header {
+				padding: 0;
+				border-bottom: none;
+				border-top-left-radius: none;
+				border-top-right-radius: none;
+				margin-bottom: 16px;
+			}
+
+			.modal-body {
+				padding: 0;
+
+				.body-content {
+					position: absolute;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					left: 50%;
+					margin-right: -50%;
+
+					@media (min-width: 768px) {
+						width: 80%;
+					}
+
+					h3 {
+						font-family: 'Averta Std Bold';
+						font-style: normal;
+						font-weight: bold;
+						font-size: 18px;
+						line-height: 30px;
+						color: #000000;
+						margin-bottom: 4px;
+
+						@media (min-width: 768px) {
+							font-size: 24px;
+							line-height: 36px;
+						}
+					}
+
+					p {
+						font-family: Averta Std;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 21px;
+						color: #242625;
+
+						@media (min-width: 768px) {
+							font-size: 16px;
+							line-height: 24px;
+						}
+					}
+				}
+			}
+
+			.modal-footer {
+				padding: 0;
+				border-top: none;
+
+				.close {
+					background: #006b3f;
+					padding: 12px;
+					border-radius: 50%;
+					opacity: 1;
+
+					.icon-close {
+						color: #fff;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+}

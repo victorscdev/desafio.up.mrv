@@ -1,6 +1,8 @@
 async function distritos_get() {
 	await axios
-		.get('https://servicodados.ibge.gov.br/api/v1/localidades/distritos')
+		.get(
+			'https://servicodados.ibge.gov.br/api/v1/localidades/distritos?orderBy=nome',
+		)
 		.then(function (response) {
 			response.data.map((select, index) => {
 				let select_distrito = document.getElementById(
