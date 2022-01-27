@@ -34,9 +34,9 @@
 						onblur="disabled_btn_buscar()"
 					>
 						<option selected>Selecionar área</option>
-						<option value="1">Area 1</option>
-						<option value="2">Area 2</option>
-						<option value="3">Area 3</option>
+						<option value="Area 1">Area 1</option>
+						<option value="Area 2">Area 2</option>
+						<option value="Area 3">Area 3</option>
 					</select>
 				</div>
 
@@ -52,7 +52,15 @@
 					/>
 				</div>
 
-				<button type="button" id="btn_buscar">Buscar</button>
+				<button
+					type="button"
+					id="btn_buscar"
+					data-toggle="modal"
+					data-target="#modal_mrv"
+					onclick="set_modal()"
+				>
+					Buscar
+				</button>
 			</div>
 			<div class="offset-lg-1 col-lg-4 d-none d-lg-flex align-items-center">
 				<div class="vagas__barra"></div>
